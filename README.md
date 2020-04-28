@@ -6,7 +6,7 @@ This extension includes basic support for XCompose files.
 
 ### Syntax highlighting
 
-<!--![Syntax highlighting](img/syntax.png)-->
+![Syntax highlighting](https://raw.githubusercontent.com/RubenVerg/XComposeVSCode/master/img/syntax.png)
 
 ## Known Issues
 
