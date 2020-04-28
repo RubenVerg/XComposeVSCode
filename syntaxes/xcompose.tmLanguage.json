@@ -1,0 +1,95 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "XCompose",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#nonCompliant"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#specials"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#keys"
+		},
+		{
+			"include": "#uniPoints"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "storage.modifier.import.xcompose",
+				"match": "(include|<Multi_key>)"
+			}]
+		},
+		"specials": {
+			"patterns": [
+				{
+					"name": "storage.modifier.xcompose",
+					"match": "(<Up>|<Down>|<Left>|<Right>|<space>|<exclam>|<quotedbl>|<numbersign>|<dollar>|<percent>|<ampersand>|<apostrophe>|<parenleft>|<parenright>|<asterisk>|<plus>|<comma>|<minus>|<period>|<slash>|<colon>|<semicolon>|<less>|<equal>|<greaater>|<at>|<bracketleft>|<backslash>|<bracketright>|<asciicircum>|<undescore>|<grave>|<braceleft>|<bar>|<braceright>|<asciitilde>)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.xcompose",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.xcompose",
+					"match": "\\\\."
+				}
+			]
+		},
+		"keys": {
+			"name": "keyword.control.xcompose",
+			"begin": "<",
+			"end": ">",
+			"beginCaptures": {
+				"0": {
+					"name": "keyword.control.less.xcompose"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "keyword.control.greater.xcompose"
+				}
+			}
+		},
+		"comments": {
+			"name": "comment.line.xcompose",
+			"begin": "#",
+			"end": "\\n",
+			"beginCaptures": {
+				"0": {
+					"name": "comment.line.number-sign.xcompose"
+				}
+			}
+		},
+		"nonCompliant": {
+			"name": "invalid.illegal.xcompose",
+			"patterns": [{
+				"name": "invalid.illegal.xcompose",
+				"match": "\\n<^(Multi_Key)>( <.+>)* +: +\".+\" +(U(0|1|2|3|4|5|6|7|8|9|a|A|b|B|c|C|d|D|e|E|f|F)+)? ?(#.+)?\\n"
+			}]
+		},
+		"uniPoints": {
+			"patterns": [
+				{
+					"name": "constant.numeric.xcompose",
+					"match": "U(0|1|2|3|4|5|6|7|8|9|a|A|b|B|c|C|d|D|e|E|f|F)+"
+				}
+			]
+		}
+	},
+	"scopeName": "text.xcompose"
+}

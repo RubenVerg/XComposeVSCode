@@ -1,0 +1,26 @@
+{
+    "name": "xcompose",
+    "displayName": ".XCompose Support",
+    "description": "Adds basic support for .XCompose files.",
+    "version": "1.0.0",
+    "publisher": "RubenVerg",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "xcompose",
+            "aliases": ["XCompose", "xcompose"],
+            "extensions": [".XCompose"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "xcompose",
+            "scopeName": "text.xcompose",
+            "path": "./syntaxes/xcompose.tmLanguage.json"
+        }]
+    }
+}
