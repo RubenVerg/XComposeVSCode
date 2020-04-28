@@ -3,6 +3,9 @@
     "displayName": ".XCompose Support",
     "description": "Adds basic support for .XCompose files.",
     "version": "1.0.0",
+    "repository": {
+        "directory": "https://github.com/rubenverg/xcomposevscode"
+    },
     "publisher": "RubenVerg",
     "engines": {
         "vscode": "^1.44.0"
