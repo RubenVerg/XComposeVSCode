@@ -1,2 +1,4 @@
 .metals
 .metals/
+.fake
+.ionide
