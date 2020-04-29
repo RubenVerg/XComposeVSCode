@@ -20,7 +20,8 @@ This extension includes basic support for XCompose files.
 ### Snippets
 
 ![Snippets](https://raw.githubusercontent.com/RubenVerg/XComposeVSCode/master/img/snippets.gif)
-Typing `mk` resolves to `<Multi_key>`.
+
+Typing `mk⟨Tab ↹⟩` resolves to `<Multi_key>`.
 
 ## Known Issues
 

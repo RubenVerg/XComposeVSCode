@@ -2,7 +2,7 @@
     "name": "xcompose",
     "displayName": ".XCompose Support",
     "description": "Adds support for .XCompose files.",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "repository": {
         "directory": "https://github.com/rubenverg/xcomposevscode"
     },
