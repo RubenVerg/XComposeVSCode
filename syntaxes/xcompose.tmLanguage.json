@@ -27,7 +27,7 @@
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "storage.modifier.import.xcompose",
+				"name": "support.xcompose",
 				"match": "(include|<Multi_key>)"
 			}]
 		},
@@ -56,12 +56,12 @@
 			"end": ">",
 			"beginCaptures": {
 				"0": {
-					"name": "keyword.control.less.xcompose"
+					"name": "storage.modifier.less.xcompose"
 				}
 			},
 			"endCaptures": {
 				"0": {
-					"name": "keyword.control.greater.xcompose"
+					"name": "storage.modifier.greater.xcompose"
 				}
 			}
 		},
@@ -76,17 +76,17 @@
 			}
 		},
 		"nonCompliant": {
-			"name": "invalid.illegal.xcompose",
+			"name": "string.invalid.illegal.xcompose",
 			"patterns": [{
 				"name": "invalid.illegal.xcompose",
-				"match": "\\n<^(Multi_Key)>( <.+>)* +: +\".+\" +(U(0|1|2|3|4|5|6|7|8|9|a|A|b|B|c|C|d|D|e|E|f|F)+)? ?(#.+)?\\n"
+				"match": "\\n<([a-zA-Z])+>"
 			}]
 		},
 		"uniPoints": {
 			"patterns": [
 				{
 					"name": "constant.numeric.xcompose",
-					"match": "U(0|1|2|3|4|5|6|7|8|9|a|A|b|B|c|C|d|D|e|E|f|F)+"
+					"match": "U([0-9a-fA-F])+"
 				}
 			]
 		}

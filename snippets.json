@@ -1,0 +1,9 @@
+{
+  "Multi_key": {
+    "prefix": "mk",
+    "body": [
+      "<Multi_key> $0"
+    ],
+    "description": "Shortcut for <Multi_key>."
+  }
+}

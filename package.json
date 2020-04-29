@@ -11,19 +11,35 @@
         "vscode": "^1.44.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "contributes": {
-        "languages": [{
-            "id": "xcompose",
-            "aliases": ["XCompose", "xcompose"],
-            "extensions": [".XCompose"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "xcompose",
-            "scopeName": "text.xcompose",
-            "path": "./syntaxes/xcompose.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "xcompose",
+                "aliases": [
+                    "XCompose",
+                    "xcompose"
+                ],
+                "extensions": [
+                    ".XCompose"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "xcompose",
+                "scopeName": "text.xcompose",
+                "path": "./syntaxes/xcompose.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "xcompose",
+                "path": "./snippets.json"
+            }
+        ]
     }
 }
